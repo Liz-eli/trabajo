@@ -96,6 +96,14 @@ div,li {
   text-align: center;
 }
 
+.concept_title {
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.concept_inner {
+  padding: 50px 10% 30px;
+}
 .key_section_inner{
     display: flex;
     top: 50%;
@@ -105,15 +113,35 @@ div,li {
     font-size: 10px;
 }
 .container {
-  display: grid;
-  grid-template-columns: 1fr 8fr; /* Dividir el contenedor en dos columnas de igual ancho */
-  gap: 5px; /* Espacio entre las columnas */
+  display: flex;
+  align-items: center;
+}
+
+.contenido {
+  width: 60%;
+  padding: 20px;
+}
+
+.im {
+  width: 35%;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.container {
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  max-width: 1200px; /* Limitar el ancho máximo del contenido */
+}
+
+.contenido p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .im img {
-  max-width: 100%; /* Asegurarse de que la imagen no supere el ancho del contenedor */
-  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
-  height: auto; /* Mantener la proporción de la imagen */
+  max-width: 100%;
+  height: auto;
+  display: block; /* Evita espacios debajo de la imagen */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
 }
 
 
